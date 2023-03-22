@@ -1,2 +1,2 @@
 # full-clear-solutions-website
-Company websiet
+Company website
