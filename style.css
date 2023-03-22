@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.content {
+    display: flex;
+}
+.info {
+    display: flex;
+}
+.quote {
+    display: flex;
+}
+.footer {
+    display: flex;
+}
