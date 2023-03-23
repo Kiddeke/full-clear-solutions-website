@@ -11,11 +11,17 @@ padding: 0;
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
+    padding-left: 50px;
+}
+
+.overview {
+    max-width: 40em;
 }
 
 .header {
     justify-content: space-between;
 }
+
 
 .info {
     display: flex;
@@ -23,22 +29,44 @@ padding: 0;
     align-items: center;
 }
 
+.infotitle {
+    font-size: 24px;
+}
+
 .infoimage {
     display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+    flex-wrap: wrap;
 }
 
 .infoimage img {
-    border: 3px solid #3882F6;
+    border: 5px solid #3882F6;
     border-radius: .5em;
-    padding: 1px;
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.infoimage p {
+    max-width: 200px;
 }
 
 .quote {
+    display: block;
     font-size: 36px;
     color: #1F2937;
     font-weight: lighter;
     background-color: #e5e7eb;
+    
 }
+
+.shaq {
+    text-align: right;
+}
+
 .footer {
     margin-top: auto;
+    background-color: #e5e7eb;
 }
