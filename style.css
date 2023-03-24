@@ -90,6 +90,12 @@ a {
   padding: 8px 16px 8px 16px;
 }
 
+.signuptop:active {
+color: #3882f6;
+background-color: #f9faf8;
+}
+
+
 /* info section */
 
 .info {
@@ -168,12 +174,15 @@ text-align: right;
 .signupbottom {
     color: #f9faf8;
     background-color: #3882f6;
-    border: 0px;
     border-radius: 0.5em;
     padding: 6px 14px 6px 14px;
-    border-color: #f9faf8;
-    border: 2px solid;
+    border: 2px solid #f9faf8;
 }
+
+.signupbottom:active {
+    color: #3882f6;
+    background-color: #f9faf8;
+    }
 /* footer */
 
 .footer {
