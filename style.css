@@ -1,3 +1,5 @@
+/* full content */
+
 body {
   display: flex;
   min-height: 100vh;
@@ -6,6 +8,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* duplicated requirements */
 
 .header,
 .content {
@@ -26,6 +30,8 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+/* header */
 
 .header {
   justify-content: space-between;
@@ -55,6 +61,17 @@ a {
   font-size: 18px;
 }
 
+/* content section */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content p {
+    max-width: 280px;
+}
+
 .content img {
     border: 5px solid #e5e7eb;;
     border-radius: 0.5em;
@@ -63,9 +80,7 @@ a {
     object-fit: cover;
 }
 
-.overview {
-  max-width: 40em;
-}
+
 
 .signuptop {
   color: #f9faf8;
@@ -74,6 +89,8 @@ a {
   border-radius: 0.5em;
   padding: 8px 16px 8px 16px;
 }
+
+/* info section */
 
 .info {
   display: flex;
@@ -105,6 +122,8 @@ a {
   max-width: 200px;
 }
 
+/* quote section */
+
 .quote {
   display: flex;
   flex-direction: column;
@@ -127,18 +146,40 @@ a {
 text-align: right;
 }
 
+/* signup section */
+
 .signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #3882f6;
     color: #f9faf8;
-    margin: 50px 100px 50px 100px;
+    margin: 50px auto 50px auto;
     border-radius: 2em;
-
-
+    width: 600px;
+    height: auto;
 }
+
+.calltoaction {
+    width: 400px;
+    height: auto;
+}
+
+.signupbottom {
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: 0px;
+    border-radius: 0.5em;
+    padding: 6px 14px 6px 14px;
+    border-color: #f9faf8;
+    border: 2px solid;
+}
+/* footer */
 
 .footer {
   margin-top: auto;
-  background-color: #e5e7eb;
+  background-color: #1f2937;
+  color: #f9faf8;
   padding-top: 20px;
   padding-bottom: 20px;
 }
