@@ -7,18 +7,42 @@ body {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
+  background-color: #47754f
 }
 
+.icon {
+  height: 1em;
+  length: 1em;
+  border-radius: 1em;
+  justify-content: end;
+}
+
+.merits {
+  list-style:inside;
+}
 /* duplicated requirements */
 
-.header,
+.header {
+  background-color: #4dca72;
+  color: #2c2c2c;
+  display: flex;
+  border-bottom: 10px solid rgb(41, 127, 68);
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
 .content {
-  background-color: #1f2937;
-  color: #f9faf8;
+  background-color:  ;
+  color: #e5e5e5;
   display: flex;
 }
 
-.header,
+.header {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
 .content,
 .info,
 .content,
@@ -57,8 +81,8 @@ ul {
 
 a {
   text-decoration: none;
-  color: #e5e7eb;
-  font-size: 18px;
+  color: #000000;
+  font-size: 1.5em;
 }
 
 /* content section */
@@ -73,18 +97,32 @@ a {
 }
 
 .content img {
-    border: 5px solid #e5e7eb;;
+    border: 5px solid #262920;;
     border-radius: 0.5em;
     width: 300px;
     height: 200px;
     object-fit: cover;
 }
 
+.overview {
+  background-color:rgb(41, 127, 68);
+  border-radius: 1em;
+  border: .2em solid rgb(20, 69, 20);
+  padding: .5em;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
 
+.overview h2 {
+  justify-content: center;
+  align-self:
+}
 
 .signuptop {
   color: #f9faf8;
-  background-color: #3882f6;
+  background-color: #144228;
   border: 0px;
   border-radius: 0.5em;
   padding: 8px 16px 8px 16px;
@@ -102,6 +140,7 @@ background-color: #f9faf8;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 
 .infotitle {
@@ -117,7 +156,7 @@ background-color: #f9faf8;
 }
 
 .infoimage img {
-  border: 5px solid #3882f6;
+  border: 5px solid #124c1d;
   border-radius: 0.5em;
   width: 200px;
   height: 200px;
@@ -158,7 +197,7 @@ text-align: right;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3882f6;
+    background-color: #1e582a;
     color: #f9faf8;
     margin: 50px auto 50px auto;
     border-radius: 2em;
@@ -173,21 +212,21 @@ text-align: right;
 
 .signupbottom {
     color: #f9faf8;
-    background-color: #3882f6;
+    background-color: #174d29;
     border-radius: 0.5em;
     padding: 6px 14px 6px 14px;
     border: 2px solid #f9faf8;
 }
 
 .signupbottom:active {
-    color: #3882f6;
+    color: #125125;
     background-color: #f9faf8;
     }
 /* footer */
 
 .footer {
   margin-top: auto;
-  background-color: #1f2937;
+  background-color: #2b4731;
   color: #f9faf8;
   padding-top: 20px;
   padding-bottom: 20px;
