@@ -1,3 +1,8 @@
+/* full content */
+* {
+  border: 1px dashed white;
+}
+
 html, body {
   display: flex;
   flex-direction: column;
