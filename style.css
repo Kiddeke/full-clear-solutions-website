@@ -134,7 +134,7 @@ a {
   font-size: 1.3em;
 }
 
-.infoimage {
+.infoimage, .overview img {
   display: flex;
   justify-content: center;
   align-items: center;
