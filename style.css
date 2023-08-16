@@ -1,8 +1,8 @@
-/* full content */
+/* full content 
 * {
   border: 1px dashed tomato;
 }
-
+*/
 html, body {
   display: flex;
   flex-direction: column;
