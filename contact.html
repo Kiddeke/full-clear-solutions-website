@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Full. Clear. Solutions</title>
+    <title>Full Clear Solutions</title>
   </head>
 
   <body>
@@ -24,82 +24,26 @@
       </div>
     </div>
 
-    <div class="content">
-      <div class="overview">
-        <h2>Complete Solutions</h2>
-        <div>
-          <p>
-            <ol class="merits">
-              <li>7+ YOE of Fortune 500 Corporate Finance for Fortune 500.</li>
-            <li>OneStream Admin Certified.</li>
-            <li>4+ YOE Implementing OneStream.</li>
-            <li> Industries: Banking, Retail, Defense, Telecommunications.</li>
-            <li>Google Cloud Platform & Data Management.</li>
-            <li>Oracle Netsuite, Python.</li>
-            <li>Model Creation, Implementation and Validation.</li>
-          </ol>
-          </p>
-        </div>
-        <div><button class="signuptop">Contact</button></div>
-      </div>
-      <div>
-        <img src="images/coffee.jpg" alt="coffee" />
-      </div>
-    </div>
-
-    <div class="info">
-      <div class="infotitle">
-        <h3>Full. Clear. Solutions.</h3>
-      </div>
-      <div class="infoimage">
-        <div>
-          <img src="images/eyeglasses.jpg" alt="hello" />
-          <p>
-            Smart, uniquely prescribed solutions that are precise and
-            affordable.
-          </p>
-        </div>
-        <div>
-          <img src="images/lightbulb.jpg" alt="hello" />
-          <p>
-            Sparks of inspiration and insight that will keep your business
-            thriving.
-          </p>
-        </div>
-        <div>
-          <img src="images/waterglass.png" alt="hello" />
-          <p>A splash of flavor will set you apart from others.</p>
-        </div>
-        <div>
-          <img src="images/connections.jpg" alt="hello" />
-          <p>Connections drive business opportunity and growth.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="quote">
-      <div class="quoteflex">
-        <div class="shaqquote">
-          <p>
-            <em
-              >"Aristotle once said that excellence is not a singular act, but a
-              habit. You are what you repeatedly do."</em
-            >
-          </p>
-        </div>
-        <div class="shaq">
-          <p><strong>- Shaquille O'Neal</strong></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="signup">
-      <div class="calltoaction">
-        <h4>Why wait? Uplevel your business today.</h4>
-        <p>Sign up by clicking that button right over there!</p>
-      </div>
-      <div><button class="signupbottom">Sign up</button></div>
-    </div>
+    <form action="process_form.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required><br><br>
+      
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <!-- Add more options here -->
+      </select><br><br>
+      
+      <input type="submit" value="Submit">
+  </form>
 
     <div class="footer">
       <div>Full Clear Solutions</div>

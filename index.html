@@ -40,7 +40,7 @@
           </ol>
           </p>
         </div>
-        <div><button class="signuptop">Contact</button></div>
+        <div><button class="signuptop"><a href="./contact.html">Contact</a></button></div>
       </div>
       <div>
         <img src="images/coffee.jpg" alt="coffee" />
@@ -94,16 +94,25 @@
     </div>
 
     <div class="signup">
-      <div class="calltoaction">
-        <h4>Why wait? Uplevel your business today.</h4>
-        <p>Sign up by clicking that button right over there!</p>
-      </div>
-      <div><button class="signupbottom">Sign up</button></div>
+      <form action="send_email.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone"><br><br>
+          
+          <input type="submit" value="Sign Up">
+      </form>
     </div>
 
     <div class="footer">
       <div>Full Clear Solutions</div>
       <div>Contact: fullclearsolutions@gmail.com</div>
     </div>
+    
   </body>
+  <script src="script.js"></script>
 </html>
