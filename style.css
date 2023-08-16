@@ -1,4 +1,7 @@
 /* full content */
+* {
+  border: 1px dashed tomato;
+}
 
 html, body {
   display: flex;
