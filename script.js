@@ -10,34 +10,20 @@ setTimeout(() => {
   headerLogo.style.transform = 'translateX(0)';
 }, 500);
 
-// Animate the overview section elements on scroll
-const overviewElements = document.querySelectorAll('.overview > *');
-overviewElements.forEach(element => {
-  element.style.opacity = 0;
-  element.style.transform = 'translateY(50px)';
-  element.style.transition = 'opacity 1s, transform 1s';
-});
-
-window.addEventListener('scroll', () => {
-  const scrollPosition = window.innerHeight - 100;
-  overviewElements.forEach(element => {
-    const elementPosition = element.getBoundingClientRect().top;
-    if (elementPosition < scrollPosition) {
-      element.style.opacity = 1;
-      element.style.transform = 'translateY(0)';
-    }
-  });
-});
-
 // Animate the quote section on hover
 const quoteSection = document.querySelector('.quote');
+const shaqImage = document.querySelector('.shaqquote img');
+
 quoteSection.addEventListener('mouseover', () => {
   quoteSection.style.backgroundColor = '#f9faf8';
   quoteSection.style.color = '#125125';
+  shaqImage.style.animation = 'spin 2s infinite linear';
 });
+
 quoteSection.addEventListener('mouseout', () => {
   quoteSection.style.backgroundColor = '#e5e7eb';
   quoteSection.style.color = '#1f2937';
+  shaqImage.style.animation = 'none';
 });
 
 // Animate the signup button on click
