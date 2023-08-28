@@ -6,7 +6,11 @@
         jobs:
             FTP-Deploy-Action:
             name: FTP-Deploy-Action
+<<<<<<< HEAD
             runs-on: macOS
+=======
+            runs-on: macos
+>>>>>>> 281d9ce2ee5b035b92a922ae1593917292b87143
             steps:
                 - uses: actions/checkout@v2.1.0
                  with:
