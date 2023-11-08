@@ -9,9 +9,24 @@ body {
   background-color: #f0f3f5;
 }
 
-body.dark-theme {
-  color:#eee;
-  background-color: #121212;
+body.dark{
+  color: white;
+  background-color: black;
+}
+
+.dark .info {
+  color: white;
+  background-color: rgba(65, 63, 63, 0.744);
+}
+
+.dark .quoteflex {
+  color: white;
+  background-color: black;
+}
+
+.dark div.quote {
+  color: white;
+  background-color: black;
 }
 
 .icon {
