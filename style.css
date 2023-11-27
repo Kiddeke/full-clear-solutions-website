@@ -33,6 +33,7 @@ body.dark{
 .icon {
   height: 1em;
   width: 1em;
+  z-index: 2;
   border-radius: 1em;
   justify-content: flex-end;
 }
