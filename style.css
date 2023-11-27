@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0f3f5;
+  font-size: 1rem;
 }
 
 body.dark{
@@ -45,11 +46,8 @@ body.dark{
   color: #333;
   display: flex;
   flex-wrap: nowrap;
-  border-bottom: 7px solid #297f44;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-  font-size: 0.7em;
-  padding: 0.5em 5em;
+  font-size: .6em;
+  padding: .2rem .4rem;
 }
 
 .content,
@@ -57,7 +55,7 @@ body.dark{
 .quote,
 .signup,
 .footer {
-  padding: 1.5em 5em;
+  padding: 1rem 1rem;
 }
 
 /* header */
@@ -71,7 +69,7 @@ body.dark{
 
 .headerlinks {
   display: flex;
-  padding-right: 2.5%;
+  padding-right: 1rem;
 }
 
 ul {
@@ -80,8 +78,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.7em;
-  flex-wrap: wrap;
+  gap: .5rem;
+  flex-wrap: nowrap;
 }
 
 a {
@@ -96,10 +94,11 @@ a {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .content p {
-  max-width: 5em;
+  max-width: 5rem;
 }
 
 #form {
