@@ -199,7 +199,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 2em;
+  font-size: 1.5rem;
   color: #1f2937;
   font-weight: lighter;
   background-color: #e5e7eb;
@@ -213,7 +213,6 @@ form {
 
 .shaqquote {
   text-align: center;
-  animation: spin 2s infinite linear;
 }
 
 .shaq {
