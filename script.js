@@ -10,6 +10,27 @@ setTimeout(() => {
   headerLogo.style.transform = 'translateX(0)';
 }, 500);
 
-function switchMode() {
-  document.body.classList.toggle('dark');
+function switchModeDark() {
+  if (document.body.classList == "") {
+    document.body.classList.add("dark");
+  } else {document.body.classList.replace("light", "dark");
+} 
+  localStorage.setItem("theme","dark");
 }
+
+function switchModeLight() {
+  if (document.body.classList == "") {
+    document.body.classList.add("light");
+  } else {document.body.classList.replace("dark", "light");
+} 
+  localStorage.setItem("theme","light");
+}
+
+
+if (localStorage.getItem("theme") == "dark") {
+document.body.classList.add("dark");
+} else {document.body.classList.add("light");
+};
+
+
+
