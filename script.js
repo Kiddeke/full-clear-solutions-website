@@ -10,6 +10,8 @@ setTimeout(() => {
   headerLogo.style.transform = 'translateX(0)';
 }, 500);
 
+
+// dark mode switch
 function switchModeDark() {
   if (document.body.classList == "") {
     document.body.classList.add("dark");
@@ -18,6 +20,8 @@ function switchModeDark() {
   localStorage.setItem("theme","dark");
 }
 
+
+// light mode switch
 function switchModeLight() {
   if (document.body.classList == "") {
     document.body.classList.add("light");
@@ -26,7 +30,7 @@ function switchModeLight() {
   localStorage.setItem("theme","light");
 }
 
-
+// local storage for dark/light preference
 if (localStorage.getItem("theme") == "dark") {
 document.body.classList.add("dark");
 } else {document.body.classList.add("light");
