@@ -41,6 +41,9 @@ document.body.classList.add("dark");
 //array practice
 
 
+
+
+
 const cats = ["Oracle", " OneStream", " Anaplan", " Profix"];
 
 for (const cat of cats) {
@@ -66,5 +69,8 @@ cats[0] = "Hyperion";
 console.log(cats);
 
 console.log(cats[1]);
+
+console.log(cats[2]);
+
 
 
