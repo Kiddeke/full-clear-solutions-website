@@ -44,33 +44,34 @@ document.body.classList.add("dark");
 
 
 
-const cats = ["Oracle", " OneStream", " Anaplan", " Profix"];
+const finApps = ["Oracle", " OneStream", " Anaplan", " Profix"];
 
-for (const cat of cats) {
-  console.log(cat);
-}
 
 function changeArray() {
-  if (cats[0] == "Hyperion") {
-    cats[0] = "Oracle";
-    console.log(cats[0]);
-    document.getElementById("demo").innerHTML = cats;
-  } else if (cats[0] == "Oracle") {
-    cats[0] = "Hyperion";
-    console.log(cats[0]);
-    document.getElementById("demo").innerHTML = cats;
+  if (finApps[0] == "Hyperion") {
+    finApps[0] = "Oracle";
+    console.log(finApps[0]);
+    document.getElementById("demo").innerHTML = finApps;
+  } else if (finApps[0] == "Oracle") {
+    finApps[0] = "Hyperion";
+    console.log(finApps[0]);
+    document.getElementById("demo").innerHTML = finApps;
   }
 }
 
-document.getElementById("demo").innerHTML = cats
+document.getElementById("demo").innerHTML = finApps
 
-cats[0] = "Hyperion";
+finApps[0] = "Hyperion";
 
-console.log(cats);
+console.log(finApps);
 
-console.log(cats[1]);
+console.log(finApps[1]);
 
-console.log(cats[2]);
+console.log(finApps[2]);
+
+for (const apps of finApps) {
+  console.log(apps)
+}
 
 
 
