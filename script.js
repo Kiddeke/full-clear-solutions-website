@@ -39,11 +39,6 @@ document.body.classList.add("dark");
 
 
 //array practice
-
-
-
-
-
 const finApps = ["Oracle", " OneStream", " Anaplan", " Profix"];
 
 
