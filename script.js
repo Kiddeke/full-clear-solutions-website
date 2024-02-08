@@ -68,11 +68,14 @@ for (const apps of finApps) {
   console.log(apps)
 }
 
-const array = ["hello", "yes", "okay", "nice"]
+const wow = ["hello", "yes", "okay", "nice"]
 
-array.slice([0]);
+const yikes = "yup"
+const wowAdd = "kiwi"
+// splice = 1st parameter display which is the entry, 2nd is how many to remove, third+ are ones to add.
+wow.splice(0,2,yikes, wowAdd);
 
-console.log(array);
+console.log(wow);
 
 
 
