@@ -68,5 +68,12 @@ for (const apps of finApps) {
   console.log(apps)
 }
 
+const array = ["hello", "yes", "okay", "nice"]
+
+array.slice([0]);
+
+console.log(array);
+
+
 
 
