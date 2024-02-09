@@ -79,7 +79,16 @@ basicArray.splice(0,2, yikes, wowAdd);
 
 console.log(basicArray);
 
-console.log(basicArray.map(0));
+const array2 = [
+  { key: 1, value: 10 },
+  { key: 2, value: 20 },
+  { key: 3, value: 30 },
+];
+
+const mapArray2 = array2.map(({key, value}) => ({ [key]: value, [value]: key}));
+
+console.log(mapArray2);
+console.log(array2);
 
 
 
