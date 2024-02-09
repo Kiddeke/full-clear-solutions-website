@@ -85,7 +85,7 @@ const array2 = [
   { key: 3, value: 30 },
 ];
 
-const mapArray2 = array2.map(({key, value}) => ({ [key]: value, [value]: key}));
+const mapArray2 = array2.map(({key, value}) => ({ [key]: value}));
 
 console.log(mapArray2);
 console.log(array2);
