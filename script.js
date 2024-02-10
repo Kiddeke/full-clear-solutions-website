@@ -38,57 +38,64 @@ document.body.classList.add("dark");
 };
 
 
-//array practice
-const finApps = ["Oracle", " OneStream", " Anaplan", " Profix"];
+// //array practice
+// const finApps = ["Oracle", " OneStream", " Anaplan", " Profix"];
 
 
-function changeArray() {
-  if (finApps[0] == "Hyperion") {
-    finApps[0] = "Oracle";
-    console.log(finApps[0]);
-    document.getElementById("demo").innerHTML = finApps;
-  } else if (finApps[0] == "Oracle") {
-    finApps[0] = "Hyperion";
-    console.log(finApps[0]);
-    document.getElementById("demo").innerHTML = finApps;
-  }
-}
+// function changeArray() {
+//   if (finApps[0] == "Hyperion") {
+//     finApps[0] = "Oracle";
+//     console.log(finApps[0]);
+//     document.getElementById("demo").innerHTML = finApps;
+//   } else if (finApps[0] == "Oracle") {
+//     finApps[0] = "Hyperion";
+//     console.log(finApps[0]);
+//     document.getElementById("demo").innerHTML = finApps;
+//   }
+// }
 
-document.getElementById("demo").innerHTML = finApps
+// document.getElementById("demo").innerHTML = finApps
 
-finApps[0] = "Hyperion";
+// finApps[0] = "Hyperion";
 
-console.log(finApps);
+// console.log(finApps);
 
-console.log(finApps[1]);
+// console.log(finApps[1]);
 
-console.log(finApps[2]);
+// console.log(finApps[2]);
 
-for (const apps of finApps) {
-  console.log(apps)
-}
+// for (const apps of finApps) {
+//   console.log(apps)
+// }
 
 
-//array
-const basicArray = ["hello", "yes", "okay", "nice"]
+// //array.prototype.splice
 
-const yikes = "yup"
-const wowAdd = "kiwi"
-// splice = 1st parameter display which is the entry, 2nd is how many to remove, third+ are ones to add.
-basicArray.splice(0,2, yikes, wowAdd);
 
-console.log(basicArray);
+// const basicArray = ["hello", "yes", "okay", "nice"]
 
-const array2 = [
-  { key: 1, value: 10 },
-  { key: 2, value: 20 },
-  { key: 3, value: 30 },
-];
+// const yikes = "yup"
+// const wowAdd = "kiwi"
+// // splice = 1st parameter display which is the entry, 2nd is how many to remove, third+ are ones to add.
+// basicArray.splice(0,2, yikes, wowAdd);
 
-const mapArray2 = array2.map(({key, value}) => ({ [key]: value}));
+// console.log(basicArray);
 
-console.log(mapArray2);
-console.log(array2);
+
+// //array.prototype.map
+
+// const array2 = [
+//   { key: 1, value: 10 },
+//   { key: 2, value: 20 },
+//   { key: 3, value: 30 },
+// ];
+
+// const mapArray2 = array2.map(({key, value}) => ({ [key]: value}));
+
+// console.log(mapArray2);
+// console.log(array2);
+
+
 
 
 
