@@ -95,7 +95,14 @@ document.body.classList.add("dark");
 // console.log(mapArray2);
 // console.log(array2);
 
+const removeFromArray = function(x, value ) {
+  const findValue = x.find((element) => element == value);
+  const valueLocation = x.indexOf(value);
+  const newArray = x.splice(valueLocation, 1);
+return x;
+};
 
+console.log(removeFromArray([1, 2, 3, 4], 3));
 
 
 
