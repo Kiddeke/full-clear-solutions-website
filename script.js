@@ -110,24 +110,24 @@ const finApps = ["Oracle", " OneStream", "C#", ".net"];
 
 
 
-const sumAll = function(intOne, intTwo) {
-  let x = [];
-  let lowerNum = Math.min(intOne, intTwo);
-  let higherNum = Math.max(intOne, intTwo);
-  if (lowerNum < 0 || higherNum < 0) {
-    "ERROR";
-  } else if (typeof(intOne) != typeof(1) || typeof(intTwo) != typeof(1)) {
-    "ERROR";
+const leapYears = function(year) {
+  const leap = year % 4;
+  const leap2 = year % 100;
+  const leap3 = year % 400;
+  console.log(leap);
+  console.log(leap2);
+  console.log(leap3);
+  if ((leap === 0) && (leap2 !== 0)) {
+     return true;
+    } else {
+      return false;
+     }
+
+
   };
-  for (let i = lowerNum; i < higherNum + 1; i++) {
-    x.push(i);
-  }
-  let sum = 0;
-  for (let i = 0; i < x.length; i++){
-    sum += x[i];
-  }
-  return sum;
-}
+
+  console.log(leapYears(2000));
+  
 
 
 
