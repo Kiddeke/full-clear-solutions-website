@@ -38,8 +38,8 @@ document.body.classList.add("dark");
 };
 
 
-// //array practice
-// const finApps = ["Oracle", " OneStream", " Anaplan", " Profix"];
+//array practice
+const finApps = ["Oracle", " OneStream", "C#", ".net"];
 
 
 // function changeArray() {
@@ -95,14 +95,39 @@ document.body.classList.add("dark");
 // console.log(mapArray2);
 // console.log(array2);
 
-const removeFromArray = function(x, value ) {
-  const findValue = x.find((element) => element == value);
-  const valueLocation = x.indexOf(value);
-  const newArray = x.splice(valueLocation, 1);
-return x;
-};
+// const removeFromArray = function(x, ...args) {
+//   const result = [];
+//   x.forEach((element) => {
+//       if (args.includes(element) == false) {
+//       result.push(element);
+//       }
+//   }) 
+  
+//   return result;
+//   };
 
-console.log(removeFromArray([1, 2, 3, 4], 3));
+// console.log(removeFromArray([1, 2, 3, 4],3, 2));
+
+
+
+const sumAll = function(intOne, intTwo) {
+  let x = [];
+  let lowerNum = Math.min(intOne, intTwo);
+  let higherNum = Math.max(intOne, intTwo);
+  if (lowerNum < 0 || higherNum < 0) {
+    "ERROR";
+  } else if (typeof(intOne) != typeof(1) || typeof(intTwo) != typeof(1)) {
+    "ERROR";
+  };
+  for (let i = lowerNum; i < higherNum + 1; i++) {
+    x.push(i);
+  }
+  let sum = 0;
+  for (let i = 0; i < x.length; i++){
+    sum += x[i];
+  }
+  return sum;
+}
 
 
 
