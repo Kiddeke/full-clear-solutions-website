@@ -117,16 +117,14 @@ const leapYears = function(year) {
   console.log(leap);
   console.log(leap2);
   console.log(leap3);
-  if ((leap === 0) && ((leap2 === 0) && (leap3 ===0))) {
-     return true;
+  if ((leap === 0) && ((leap2 === 0) && (leap3 !==0))) {
+     return false;
     } else {
-      return false;
+      return true;
      }
-
-
   };
 
-  console.log(leapYears(2000));
+  console.log(leapYears(2004));
   
 
 
