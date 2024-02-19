@@ -127,7 +127,7 @@ const leapYears = function(year) {
      } 
   };
 
-  console.log(leapYears(1000));
+  console.log(leapYears());
   
 
 
