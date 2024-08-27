@@ -12,7 +12,7 @@ body {
   align-content: center;
   margin: 0;
   padding: 0;
-  background-color: #f0f3f5;
+  background-color: white;
   font-size: 1rem;
 }
 
@@ -112,7 +112,7 @@ body {
 }
 
 .expertise ul li .dropdown-content li a:hover {
-  color:#7131fa;
+  color:#316afa;
   transition-duration: .25s;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 ul li a:hover{
-  color:#7131fa;
+  color:#316afa;
   transition-duration: .25s;
   transition-property: color;
 }
@@ -208,7 +208,7 @@ form {
 .signuptop {
   color: #f9faf8;
   border:#000000;
-  background-color: #7131fa;
+  background-color: #316afa;
   border: none;
   border-radius: 0.5em;
   padding: 8px 16px;
@@ -216,7 +216,7 @@ form {
 }
 
 .signuptop:hover {
-  color: #7131fa;
+  color: #316afa;
   background-color: #f9faf8;
 }
 
@@ -340,3 +340,9 @@ form {
 }
 
 /* Mobile responsiveness ... */
+
+@media (max-width: 1330px) {
+* {
+  background-color: red;
+}
+}
