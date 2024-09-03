@@ -1,6 +1,6 @@
 /* Base styles */
 * {
-  outline: ;
+  outline: dotted;
     font-family: 'Inter';
 
 }
@@ -71,32 +71,39 @@ body {
   
 }
 
+
+
 .expertise ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .expertise ul li {
   position: relative;
   display: inline-block;
+  
 }
 
 .expertise ul li a {
   text-decoration: none;
-  padding: 5px 7px;
+  padding: 2px 0px;
   display: block;
   font-size: 1.4em;
+  
 }
 
 .expertise ul li .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffffff;
-  min-width: 160px;
+  background-color: #c9c9c9;
+  border: 2px solid rgb(71, 71, 71);
+  padding-top: 10px;
+  width: max-content;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-radius: 20px;
+  border-radius: 3px;
 }
 
 .expertise ul li .dropdown-content li {
@@ -114,6 +121,8 @@ body {
 .expertise ul li .dropdown-content li a:hover {
   color:#316afa;
   transition-duration: .25s;
+  background-color:#89aaff;
+  border-radius: 3px;
 }
 
 .expertise ul li:hover .dropdown-content {
@@ -140,8 +149,17 @@ ul {
   flex-wrap: nowrap;
 }
 
-.headerlinks ul div a {
+.header-contact {
+  display: flex;
   flex-wrap: nowrap;
+}
+
+.header-contact a {
+ 
+  white-space: nowrap;
+}
+.dropdown {
+  white-space: nowrap;
 }
 
 a {
@@ -156,6 +174,9 @@ a {
 }
 
 /* content section */
+
+
+
 .content {
   display: flex;
   align-items: center;
@@ -182,9 +203,11 @@ form {
 
 .content img {
   border-radius: .5em;
-  width: 13em;
-  height: 13em;
+  width: 30em;
+  height: 35rem;
   object-fit: cover;
+
+  
 }
 
 .overview {
@@ -192,11 +215,43 @@ form {
   padding: 1em;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
   
-  flex-direction: column;
+  align-items: center;
+}
+.overview h2 {
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
+.overview-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 70vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-content-header {
+  font: bold;
+  font-size: 30px;
+  width:400px;
+}
+.overview-content-tagline {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-content-signup {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start ;
+}
 .merits {
   list-style: circle;
 }
@@ -255,7 +310,7 @@ form {
 }
 
 .infoimage img {
-  border: 5px solid #cecece;
+  
   border-radius: 0.5em;
   width: 10em;
   height: 10em;
@@ -343,6 +398,6 @@ form {
 
 @media (max-width: 1330px) {
 * {
-  background-color: red;
+
 }
 }
