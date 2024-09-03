@@ -413,6 +413,10 @@ form {
     display: none;
   }
   .signuptop {
-    font-size: 15px;
+    font-size: 25px;
+  }
+
+  .header-contact{
+    display: none;
   }
 }
