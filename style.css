@@ -1,6 +1,6 @@
 /* Base styles */
 * {
-  outline: dotted;
+  outline: ;
     font-family: 'Inter';
 
 }
@@ -170,7 +170,8 @@ a {
 .signuptop {
   text-decoration: none;
   color: #000000;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  
 }
 
 /* content section */
@@ -245,12 +246,18 @@ form {
   flex-wrap: wrap;  
   justify-content: center;
   align-items: center;
+  line-height: 25px;
+  color:#696969;
 }
 
 .overview-content-signup {
   display: flex;
   justify-content: center;
   align-self: flex-start ;
+}
+
+.overview-content-image {
+  padding-left: 80px;
 }
 .merits {
   list-style: circle;
