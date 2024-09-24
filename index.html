@@ -21,6 +21,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Full Clear Solutions</title>
 </head>
+<style>
+  /* Styles scoped to .testimonial-section */
+
+</style>
 <!-- <script src="https://cdn.jsdelivr.net/gh/sprucejoy/cookie-consent-autoblock-gdpr/cookie-consent.js"
   crossorigin="anonymous">
   </script> -->
@@ -148,6 +152,32 @@
     </div>
   </div>
 
+  <div class="testimonial-section">
+    <h2>What Clients Say About Working with Full Clear Solutions on OneStream</h2>
+    <div class="testimonial-container">
+      <div class="testimonial" id="testimonial1">
+        <p>"Working with Full Clear Solutions on OneStream was a seamless experience. Highly recommend!"</p>
+        <span>- Client A</span>
+      </div>
+      <div class="testimonial" id="testimonial2">
+        <p>"Efficient, reliable, and highly knowledgeable in OneStream. Amazing support!"</p>
+        <span>- Client B</span>
+      </div>
+      <div class="testimonial" id="testimonial3">
+        <p>"Transformed our financial processes using OneStream. Great to work with."</p>
+        <span>- Client C</span>
+      </div>
+      <div class="testimonial" id="testimonial4">
+        <p>"Transformed our financial processes using OneStream. Great to work with."</p>
+        <span>- Client E</span>
+      </div>
+      <div class="testimonial" id="testimonial5">
+        <p>"Transformed our financial processes using OneStream. Great to work with."</p>
+        <span>- Client F</span>
+      </div>
+    </div>
+  </div>
+
   <div class="quote">
     <div class="quoteflex">
       <div class="shaqquote">
@@ -195,14 +225,17 @@
 </body>
 <script src="script.js" cache="true"></script>
 <script>
+  // DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed.
   addEventListener('DOMContentLoaded', (event) => {
     console.log('The DOM is fully loaded.');
   });
 
+  // The load event is fired when the whole page has loaded, including all dependent resources such as stylesheets and images.
   addEventListener('load', (event) => {
     console.log('The page is fully loaded.');
   });
 
+  // The beforeunload event is fired when the window, the document and its resources are about to be unloaded.
   // addEventListener('beforeunload', (event) => {
   //     // show the confirmation dialog
   //     event.preventDefault();
@@ -210,17 +243,49 @@
   //     event.returnValue = '';
   // });
 
+  // The unload event is fired when the document or a child resource is being unloaded.
   addEventListener('unload', (event) => {
     // send analytic data
   });
 
+  // add event listener to the logo
   let mainIcon = document.querySelector("#mainIcon");
 
   mainIcon.addEventListener('load', (event) => {
     console.log('Logo has been loaded!');
   });
 
+  // set the source of the logo
   mainIcon.src = "images/Clear Vision.png";
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const testimonialSection = document.querySelector('.testimonial-section');
+    const testimonialContainer = testimonialSection.querySelector('.testimonial-container');
+
+    let isScrolling;
+    /**
+     * Automatically scrolls the testimonials container to the right every 1.5 seconds,
+     * wrapping around to the start when the end is reached.
+     */
+    function autoScrollTestimonials() {
+      const scrollInterval = setInterval(() => {
+        const container = testimonialSection.querySelector('.testimonial-container');
+
+        // Scroll the container to the right by 300 pixels, smoothly
+        container.scrollBy({ left: 200, behavior: 'smooth' });
+
+        // If we've reached the end, wrap around to the start
+        if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+          container.scrollTo({ left: 0, behavior: 'smooth' });
+        }
+      }, 1500); // Scroll every 1.5 seconds
+    }
+
+   
+
+    autoScrollTestimonials();
+  });
 </script>
 
 </html>

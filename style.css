@@ -26,8 +26,10 @@ body {
   align-content: center;
 }
 
+
 .content,
 .info,
+.testimonial-section,
 .quote,
 .signup,
 .footer {
@@ -41,9 +43,11 @@ body {
   display: flex;
   flex-wrap: nowrap;
   font-size: 1em;
+  margin-left: 5rem;
+  margin-right: 5rem;
   padding: 0.2rem 0.4rem;
   height: 7em;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .headerlogo {
@@ -385,10 +389,58 @@ form {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.testimonial-section {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  padding: 40px 0;
+  
+}
+
+.testimonial-section h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonial-section .testimonial-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.testimonial-section .testimonial {
+  flex: 0 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 10px 60px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.testimonial-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.testimonial-section span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
 
 /* Mobile responsiveness ... */
 
 @media (max-width: 1330px) {
+
+
   .overview-content-header {
     font: bold;
     font-size: 30px;
@@ -418,5 +470,14 @@ form {
 
   .header-contact{
     display: none;
+  }
+  .testimonial-section .testimonial {
+    flex: 0 0 50%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 10px 60px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
   }
 }
