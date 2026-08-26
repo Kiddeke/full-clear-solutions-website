@@ -1,0 +1,16 @@
+{
+  "_readme": "Machine-readable index of blog posts. Newest first. Used by the automated OneStream news publisher to avoid duplicate posts: before publishing, compare candidate news against every entry's title, topics, and source URLs. Keep this file in sync with blog/index.html.",
+  "posts": [
+    {
+      "title": "DHS Plans $100M+ Follow-On OneStream Systems Integrator BPA",
+      "date": "2026-08-26",
+      "path": "blog/posts/2026-08-26-dhs-onestream-systems-integrator-bpa.html",
+      "summary": "DHS plans to compete a follow-on OneStream systems integrator BPA worth more than $100 million supporting its PPBE work, with a solicitation expected October 20, 2026 and award anticipated in Q2 FY2027.",
+      "topics": ["DHS", "government", "BPA", "systems integrator", "PPBE"],
+      "sources": [
+        "https://www.govconwire.com/articles/dhs-follow-on-onestream-systems-integrator-bpa",
+        "https://www.prnewswire.com/news-releases/onestream-announces-completion-of-acquisition-by-hg-for-6-4-billion-302731460.html"
+      ]
+    }
+  ]
+}
